@@ -1,6 +1,8 @@
 import { HeartIcon } from "@heroicons/react/solid";
 
 function Footer() {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 py-14 bg-gray-100 text-gray-600">
@@ -38,7 +40,10 @@ function Footer() {
         </div>
       </div>
       <div className="bg-gray-200 text-sm text-center flex items-center justify-center">
-        Made with <HeartIcon className="ml-1 h-4 text-red-400" />
+        <span className="flex mr-3 text-gray-600">
+          Made with <HeartIcon className="ml-1 h-4 text-red-400" />
+        </span>
+        |<span className="ml-3 text-gray-600">Jonas Gabriel - {year}</span>
       </div>
     </>
   );
