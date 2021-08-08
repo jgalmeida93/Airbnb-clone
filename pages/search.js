@@ -4,7 +4,6 @@ import { format } from "date-fns";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getData } from "../constants/getData";
-import Image from "next/image";
 import InfoCard from "../components/InfoCard";
 import Map from "../components/Map";
 
