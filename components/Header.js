@@ -52,6 +52,8 @@ function Header({ placeholder }) {
       <div onClick={() => router.push('/')} className="relative flex items-center h-10 cursor-pointer my-auto">
         <Image
           src={`${getData}/qd3`}
+          blurDataURL={`${getData}/qd3`}
+          placeholder='blur'
           layout="fill"
           objectFit="contain"
           objectPosition="left"

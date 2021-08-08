@@ -8,7 +8,7 @@ function SmallCard({ img, location, distance }) {
                     transition transform duration-200 ease-out"
     >
       <div className="relative h-16 w-16">
-        <Image src={img} layout="fill" className="rounded-lg" />
+        <Image src={img} layout="fill" blurDataURL={img} placeholder='blur' className="rounded-lg" />
       </div>
 
       <div>

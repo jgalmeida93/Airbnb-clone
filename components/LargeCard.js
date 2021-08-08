@@ -9,6 +9,8 @@ function LargeCard({ img, title, description, buttonText }) {
           src={img}
           layout="fill"
           objectFit="cover"
+          blurDataURL={img}
+          placeholder='blur'
         />
       </div>
       <div className="absolute top-32 left-12">
